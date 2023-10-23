@@ -6,8 +6,12 @@
 myFinalMarks = dict()
 module = input('Module')
 mark = input('Mark')
-myFinalMarks[module] = int(mark)
-print(myFinalMarks)
+
+for key in module.split(' '):
+    for item in mark.split(' '):
+        myFinalMarks[key] = int(item)
+# myFinalMarks[module] = int(mark)
+# print(myFinalMarks)
 def calculateAvr(finalMarks):
     total = 0
     for key in finalMarks:
